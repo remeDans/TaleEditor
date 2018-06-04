@@ -1,0 +1,201 @@
+﻿<Window x:Class="TaleEditor.wndPreview"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaleEditor"
+        mc:Ignorable="d"
+        Title="Vista Previa" Height="300" Width="450" Loaded="Window_Loaded" KeyUp="Window_KeyUp" >
+
+    <Border x:Name="brdPage" BorderBrush="DarkGray" BorderThickness="0,0,0,2" Visibility="Visible" Background="WhiteSmoke" Margin="0"  >
+        <Grid x:Name="grdPage">
+            <Image x:Name="imgBackgroundPage" Margin="0,0,0,0"  />
+            <Label x:Name="lblPage" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="20" />
+
+            <Grid  Margin="0,0,0,0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition x:Name="row0" Height="*"/>
+                    <RowDefinition x:Name="row1" Height="auto"/>
+                    <RowDefinition x:Name="row2" Height="*"/>
+                    <RowDefinition x:Name="row3" Height="auto"/>
+                    <RowDefinition x:Name="row4" Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition x:Name="col0" Width="*"/>
+                    <ColumnDefinition x:Name="col1" Width="auto"/>
+                    <ColumnDefinition x:Name="col2" Width="*"/>
+                    <ColumnDefinition x:Name="col3" Width="auto"/>
+                    <ColumnDefinition x:Name="col4" Width="*"/>
+                    <ColumnDefinition x:Name="col5" Width="auto"/>
+                    <ColumnDefinition x:Name="col6" Width="*"/>
+                    <ColumnDefinition x:Name="col7" Width="auto"/>
+                    <ColumnDefinition x:Name="col8" Width="*"/>
+                    <ColumnDefinition x:Name="col9" Width="auto"/>
+                    <ColumnDefinition x:Name="col10" Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid x:Name="grdPic1" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Name="Pic1Row0" Height="60" />
+                        <RowDefinition x:Name="Pic1Row1" Height="20" />
+                    </Grid.RowDefinitions>
+                    
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition x:Name="Pic1Col0" Width="60" />
+                    </Grid.ColumnDefinitions>
+
+                    <Border x:Name="brdPic1" Grid.Column="1" Grid.Row="0" BorderThickness="1" BorderBrush="DarkGray" Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image Name="imgPic1"/>
+                    </Border>
+                    <Label x:Name="lblWordPic1" Grid.Column="1" Grid.Row="1" Padding="0" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="10" />
+                </Grid>
+
+                <Grid x:Name="grdPic2" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Name="Pic2Row0" Height="60" />
+                        <RowDefinition x:Name="Pic2Row1" Height="20" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition x:Name="Pic2Col0" Width="60" />
+                    </Grid.ColumnDefinitions>
+
+                    <Border x:Name="brdPic2" Grid.Column="1" Grid.Row="0" BorderThickness="1" BorderBrush="DarkGray" Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image Name="imgPic2"/>
+                    </Border>
+                    <Label x:Name="lblWordPic2" Grid.Column="1" Grid.Row="1" Padding="0" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="10" />
+                </Grid>
+
+                <Grid x:Name="grdPic3" Grid.Row="1" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Name="Pic3Row0" Height="60" />
+                        <RowDefinition x:Name="Pic3Row1" Height="20" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition x:Name="Pic3Col0" Width="60" />
+                    </Grid.ColumnDefinitions>
+
+                    <Border x:Name="brdPic3" Grid.Column="1" Grid.Row="0" BorderThickness="1" BorderBrush="DarkGray" Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image Name="imgPic3"/>
+                    </Border>
+                    <Label x:Name="lblWordPic3" Grid.Column="1" Grid.Row="1" Padding="0" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="10" />
+                </Grid>
+
+                <Grid x:Name="grdPic4" Grid.Row="1" Grid.Column="7" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Name="Pic4Row0" Height="60" />
+                        <RowDefinition x:Name="Pic4Row1" Height="20" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition x:Name="Pic4Col0" Width="60" />
+                    </Grid.ColumnDefinitions>
+
+                    <Border x:Name="brdPic4" Grid.Column="1" Grid.Row="0" BorderThickness="1" BorderBrush="DarkGray" Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image Name="imgPic4"/>
+                    </Border>
+                    <Label x:Name="lblWordPic4" Grid.Column="1" Grid.Row="1" Padding="0" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="10" />
+                </Grid>
+
+                <Grid x:Name="grdPic5" Grid.Row="1" Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Name="Pic5Row0" Height="60" />
+                        <RowDefinition x:Name="Pic5Row1" Height="20" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition x:Name="Pic5Col0" Width="60" />
+                    </Grid.ColumnDefinitions>
+
+                    <Border x:Name="brdPic5" Grid.Column="1" Grid.Row="0" BorderThickness="1" BorderBrush="DarkGray" Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image Name="imgPic5"/>
+                    </Border>
+                    <Label x:Name="lblWordPic5" Grid.Column="1" Grid.Row="1" Padding="0" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="10" />
+                </Grid>
+
+                <Grid x:Name="grdPic6" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Name="Pic6Row0" Height="60" />
+                        <RowDefinition x:Name="Pic6Row1" Height="20" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition x:Name="Pic6Col0" Width="60" />
+                    </Grid.ColumnDefinitions>
+
+                    <Border x:Name="brdPic6" Grid.Column="1" Grid.Row="0" BorderThickness="1" BorderBrush="DarkGray" Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image Name="imgPic6"/>
+                    </Border>
+                    <Label x:Name="lblWordPic6" Grid.Column="1" Grid.Row="1" Padding="0" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="10" />
+                </Grid>
+
+                <Grid x:Name="grdPic7" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Name="Pic7Row0" Height="60" />
+                        <RowDefinition x:Name="Pic7Row1" Height="20" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition x:Name="Pic7Col0" Width="60" />
+                    </Grid.ColumnDefinitions>
+
+                    <Border x:Name="brdPic7" Grid.Column="1" Grid.Row="0" BorderThickness="1" BorderBrush="DarkGray" Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image Name="imgPic7"/>
+                    </Border>
+                    <Label x:Name="lblWordPic7" Grid.Column="1" Grid.Row="1" Padding="0" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="10" />
+                </Grid>
+
+                <Grid x:Name="grdPic8" Grid.Row="3" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Name="Pic8Row0" Height="60" />
+                        <RowDefinition x:Name="Pic8Row1" Height="20" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition x:Name="Pic8Col0" Width="60" />
+                    </Grid.ColumnDefinitions>
+
+                    <Border x:Name="brdPic8" Grid.Column="1" Grid.Row="0" BorderThickness="1" BorderBrush="DarkGray" Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image Name="imgPic8"/>
+                    </Border>
+                    <Label x:Name="lblWordPic8" Grid.Column="1" Grid.Row="1" Padding="0" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="10" />
+                </Grid>
+
+                <Grid x:Name="grdPic9" Grid.Row="3" Grid.Column="7" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Name="Pic9Row0" Height="60" />
+                        <RowDefinition x:Name="Pic9Row1" Height="20" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition x:Name="Pic9Col0" Width="60" />
+                    </Grid.ColumnDefinitions>
+
+                    <Border x:Name="brdPic9" Grid.Column="1" Grid.Row="0" BorderThickness="1" BorderBrush="DarkGray" Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image Name="imgPic9"/>
+                    </Border>
+                    <Label x:Name="lblWordPic9" Grid.Column="1" Grid.Row="1" Padding="0" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="10" />
+                </Grid>
+
+                <Grid x:Name="grdPic10" Grid.Row="3" Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Name="Pic10Row0" Height="60" />
+                        <RowDefinition x:Name="Pic10Row1" Height="20" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition x:Name="Pic10Col0" Width="60" />
+                    </Grid.ColumnDefinitions>
+
+                    <Border x:Name="brdPic10" Grid.Column="1" Grid.Row="0" BorderThickness="1" BorderBrush="DarkGray" Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image Name="imgPic10"/>
+                    </Border>
+                    <Label x:Name="lblWordPic10" Grid.Column="1" Grid.Row="1" Padding="0" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="10" />
+                </Grid>
+
+            </Grid>
+        </Grid>
+    </Border>
+    <!-- EndRegion -->
+</Window>
