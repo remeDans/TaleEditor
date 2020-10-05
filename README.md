@@ -1,8 +1,8 @@
-# TaleEditor (Applicación para Windows)
+# TaleEditor (Aplicación para Windows)
 
 Esta applicación ha formado parte de mi TFG (Trabajo Fin de Grado).
 Esta applicación es un editor de cuentos con pictogramas. La idea tras esta aplicación es facilitar la creación de cuentos orientados a personas con discapacidad a sus cuidadores.  
-Para la creación de ambas aplicaciones he utilizado las siguientes tecnologías:
+Para la creación de esta aplicación se han utilizado las siguientes tecnologías:
 - Proyectos WPF (Windows Presentation Fundation)
 - Lenguajes XML, XAML, C#, SQL
 - Manipulación de ficheros ZIP
